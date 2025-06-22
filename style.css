@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff8f0;
+  color: #3e2723;
+}
+
+header {
+  background: #fbeee0;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  border-bottom: 2px solid #e0b07d;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0 0 10px 0;
+  font-size: 2.8rem;
+  color: #a0522d;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a0522d;
+  font-size: 1.15rem;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #d2691e;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #ffe5b4 60%, #fff8f0 100%);
+  padding: 48px 16px 32px 16px;
+}
+
+.hero-img {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(160, 82, 45, 0.12);
+  margin-bottom: 24px;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #a0522d;
+}
+
+.hero-text p {
+  font-size: 1.15rem;
+  color: #5c4032;
+  margin: 0;
+}
+
+.menu {
+  background: #fff3e0;
+  padding: 40px 0 32px 0;
+  text-align: center;
+}
+
+.menu h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a0522d;
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(160, 82, 45, 0.08);
+  padding: 24px 20px;
+  max-width: 260px;
+  min-width: 200px;
+}
+
+.menu-item h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d2691e;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.menu-item p {
+  color: #5c4032;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact {
+  background: #fbeee0;
+  padding: 40px 0 48px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a0522d;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.contact p {
+  color: #5c4032;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.reserve-btn {
+  background: #d2691e;
+  color: #fff;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reserve-btn:hover {
+  background: #a0522d;
+}
+
+@media (max-width: 700px) {
+  .menu-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero-img {
+    width: 90vw;
+  }
+}
